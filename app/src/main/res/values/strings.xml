@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string-array name="media_types">
+        <item>song</item>
+        <item>album</item>
+        <item>musicVideo</item>
+    </string-array>
+
+</resources>
