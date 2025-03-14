@@ -21,7 +21,8 @@ An Android app that fetches music data from the **iTunes API**, displays track l
   - [Room Database](https://developer.android.com/training/data-storage/room) - Local storage
   - Data Binding - UI optimization
 
-## Project Structure
+## 🛠 Project Structure
+```
 📂 app/src/main/
 ├── 📂 data
 │   ├── model/        # Data Models (Track, FavoriteTrack)
@@ -39,4 +40,27 @@ An Android app that fetches music data from the **iTunes API**, displays track l
 │   ├── values/       # Strings & themes
 │
 └── MainActivity.kt   # Handles Bottom Navigation
+```
 
+## 🚀 How It Works
+### 1️⃣ Fetch Tracks from iTunes API
+- The app makes an API request and retrieves a list of tracks based on the selected **media type** (`song`, `album`, `musicVideo`).
+
+### 2️⃣ Display Tracks using `RecyclerView`
+- The **`TrackAdapter`** binds data to UI components.
+- Users can scroll through the track list.
+
+### 3️⃣ Filter Tracks by Media Type
+- Users can choose `song`, `album`, or `musicVideo` from the dropdown menu (Spinner).
+- The app then **updates the API request** to fetch relevant results.
+
+### 4️⃣ Add & Remove Favorites
+- Users can **tap the star button** to add or remove tracks from **Favorites**.
+- **Favorites are stored locally** using `Room Database`.
+
+### 5️⃣ Bottom Navigation for Easy Access
+- **Track List Fragment:** Displays fetched tracks.
+- **Favorite Fragment:** Shows saved favorite tracks.
+
+## 👨‍💻 Contributor
+- **Minji Kwon** – [GitHub](https://github.com/rhatnsdj)
